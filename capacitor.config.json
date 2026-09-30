@@ -1,0 +1,8 @@
+{
+  "appId": "cl.dcastillo.micontrolfinanciero",
+  "appName": "Mi Control Financiero",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
