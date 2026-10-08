@@ -12,12 +12,12 @@ function ensureDefaults(){let fixedNames=['Dividendo','Celular','Agua','Luz','Ga
 function seedStatements202610(){
   const mm=db.months['2026-10']??={start:0,moves:[]};
   mm.cardPayments??={};
-  const amounts={'Falabella':82350,'Tricot':27160,'Unipay':89226,'Ripley':136637,'Tenpo':0};
+  const amounts={'Falabella':82350,'Tricot':27160,'ABC':50351,'La Polar':15412,'Unipay':89226,'Ripley':136637,'Tenpo':0};
   const future={
-    '2026-11':{'Tricot':13012,'Unipay':91603,'Ripley':9709},
-    '2026-12':{'Tricot':6297,'Unipay':91603,'Ripley':9423},
-    '2027-01':{'Tricot':6297,'Unipay':91603,'Ripley':9423},
-    '2027-02':{'Tricot':6297,'Unipay':91603,'Ripley':9423}
+    '2026-11':{'Tricot':13012,'ABC':6098,'La Polar':18137,'Unipay':91603,'Ripley':9709},
+    '2026-12':{'Tricot':6297,'ABC':6098,'La Polar':18137,'Unipay':91603,'Ripley':9423},
+    '2027-01':{'Tricot':6297,'ABC':6098,'La Polar':18137,'Unipay':91603,'Ripley':9423},
+    '2027-02':{'Tricot':6297,'ABC':6098,'La Polar':18137,'Unipay':91603,'Ripley':9423}
   };
   for(const [name,amount] of Object.entries(amounts)){
     const i=db.cards.findIndex(c=>c.name.toLowerCase()===name.toLowerCase());
